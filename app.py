@@ -17,7 +17,7 @@ def load_data():
     data["Reason for Delay"].fillna(value= 'None', inplace= True)
     data["Actual Arrival Time"].fillna(value= 'Unknown', inplace= True)
     data["Railcard"].fillna(value= 'none', inplace= True)
-    data["Reason for Delay"] = data["Reason for Delay"].replace('Signal failure', 'Signal Failure')
+    # data["Reason for Delay"] = data["Reason for Delay"].replace('Signal failure', 'Signal Failure')
     return data
 
 data = load_data()
