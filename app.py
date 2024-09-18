@@ -13,7 +13,7 @@ st.write("This app predicts the Journey Status using machine learning!")
 @st.cache_data
 def load_data():
     # Assuming you have a CSV or can generate the dataset dynamically
-    data = pd.read_csv(r"C:\Users\Kaybee\Videos\model_deployment\railway.csv")  # Replace with actual data
+    data = pd.read_csv(r"C:\\Users\\Kaybee\\Videos\\model_deployment\\railway.csv")  # Replace with actual data
     data["Reason for Delay"].fillna(value= 'None', inplace= True)
     data["Actual Arrival Time"].fillna(value= 'Unknown', inplace= True)
     data["Railcard"].fillna(value= 'none', inplace= True)
