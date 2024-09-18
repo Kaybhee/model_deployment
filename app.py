@@ -14,10 +14,10 @@ st.write("This app predicts the Journey Status using machine learning!")
 def load_data():
     # Assuming you have a CSV or can generate the dataset dynamically
     data = pd.read_csv("railway.csv")  # Replace with actual data
-    # data["Reason for Delay"].fillna(value= 'None', inplace= True)
-    # data["Actual Arrival Time"].fillna(value= 'Unknown', inplace= True)
-    # data["Railcard"].fillna(value= 'none', inplace= True)
-    # data["Reason for Delay"] = data["Reason for Delay"].replace('Signal failure', 'Signal Failure')
+    data["Reason for Delay"].fillna(value= 'None', inplace= True)
+    data["Actual Arrival Time"].fillna(value= 'Unknown', inplace= True)
+    data["Railcard"].fillna(value= 'none', inplace= True)
+    data["Reason for Delay"] = data["Reason for Delay"].replace('Signal failure', 'Signal Failure')
     return data
 
 data = load_data()
