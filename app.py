@@ -88,7 +88,7 @@ if st.button('Predict Journey Status'):
     st.write(f"Predicted Journey Status: {label_encoder.inverse_transform(prediction)[0]}")
 
 # Evaluate accuracy on test set
-st.subheader("Model Evaluation")
-preds = model.predict(X_test)
-accuracy = accuracy_score(y_test, preds)
-st.write(f"Test Accuracy: {accuracy:.2f}")
+# st.subheader("Model Evaluation")
+# preds = model.predict(X_test)
+# accuracy = accuracy_score(y_test, preds)
+# st.write(f"Test Accuracy: {accuracy:.4f}")
